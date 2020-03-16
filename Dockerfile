@@ -6,4 +6,4 @@ ENV MAX_MEMORY=4G
 
 WORKDIR /mnt/minecraft-server
 
-CMD ["java -jar -Xms${MIN_MEMORY} -Xmx${MAX_MEMORY} server.jar --nogui"]
+CMD ["sh", "-c", "java -jar -Xms${MIN_MEMORY} -Xmx${MAX_MEMORY} server.jar --nogui"]
